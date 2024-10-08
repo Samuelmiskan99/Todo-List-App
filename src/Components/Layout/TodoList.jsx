@@ -86,7 +86,7 @@ export default function TodoList() {
       <div
          className='min-h-screen flex items-center justify-center bg-cover bg-center'
          style={{
-            backgroundImage: 'url(src/assets/pictures/pict1.jpg)',
+            backgroundImage: 'url(./src/assets/pictures/pict1.jpg)',
             backgroundSize: 'cover', // This ensures the image covers the entire background
             backgroundPosition: 'center', // Center the image
             backgroundRepeat: 'no-repeat',
