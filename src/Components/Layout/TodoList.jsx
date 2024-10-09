@@ -84,12 +84,9 @@ export default function TodoList() {
 
    return (
       <div
-         className='min-h-screen flex items-center justify-center bg-cover bg-center'
+         className='min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat'
          style={{
             backgroundImage: 'url(./src/assets/pictures/pict1.jpg)',
-            backgroundSize: 'cover', // This ensures the image covers the entire background
-            backgroundPosition: 'center', // Center the image
-            backgroundRepeat: 'no-repeat',
          }}>
          <Card>
             <Card.title>Todo List</Card.title>
