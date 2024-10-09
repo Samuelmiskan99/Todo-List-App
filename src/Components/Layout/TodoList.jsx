@@ -88,24 +88,24 @@ export default function TodoList() {
          style={{
             backgroundImage: 'url(./src/assets/pictures/pict1.jpg)',
          }}>
-         <Card>
+         <Card className='max-w-lg w-full sm:max-w-xl lg:max-w-2xl'>
             <Card.title>Todo List</Card.title>
             <Card.body>
                <form>
-                  <div className='flex items-center justify-between mb-4 gap-x-4'>
+                  <div className='flex flex-col sm:flex-row items-center justify-between mb-4 gap-y-4 sm:gap-x-4'>
                      <Input value={newTask} onChange={(e) => setNewTask(e.target.value)} className='w-full mr-4 p-2 border rounded-md' />
                      <Button
-                        className=''
+                        className='w-full sm:w-auto'
                         onClick={handleAddTask}
                         text={editTaskId ? 'Save Task' : 'Add Task'} // Change button text based on edit state
                      />
                   </div>
                </form>
                {tasks.length > 0 ? (
-                  <ol className='space-y-2 mt-4'>
+                  <ol className='space-y-2 mt-4 w-full'>
                      {tasks.map((item) => (
-                        <li key={item.id} className=' items-center justify-between p-3 border rounded-md mb-3'>
-                           <span className='mr-40 ml-3'>
+                        <li key={item.id} className=' items-center justify-between p-3 border rounded-md mb-3  flex-col sm:flex-row'>
+                           <span className='flex-grow text-center sm:text-left mb-3 sm:mb-0 ml-1'>
                               {item.name}{' '}
                               {item.completed ? (
                                  <FontAwesomeIcon icon={faCheckCircle} className='text-green-500 text ' title='Completed' />
