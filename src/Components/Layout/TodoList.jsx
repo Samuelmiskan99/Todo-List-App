@@ -86,7 +86,7 @@ export default function TodoList() {
       <div
          className='min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat'
          style={{
-            backgroundImage: 'url(./src/assets/pictures/pict1.jpg)',
+            backgroundImage: 'url(/pict1.jpg)',
          }}>
          <Card className='max-w-lg w-full sm:max-w-xl lg:max-w-2xl'>
             <Card.title>Todo List</Card.title>
