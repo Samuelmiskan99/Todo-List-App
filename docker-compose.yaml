@@ -1,0 +1,12 @@
+services:
+   frontend:
+      build: .
+      container_name: frontend_c
+      ports:
+         - '0:4000'
+      stdin_open: true
+      tty: true
+
+networks:
+   default:
+      driver: bridge
